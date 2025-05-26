@@ -1,3 +1,11 @@
-# Test
+# Generatiivisen tekoälyn ja ohjelmistorobotiikan ohjelmointiteknologioiden perusteet
 
-initial commit
+{% raw %}{% include johdanto.md %}{% endraw %}
+{% raw %}{% include sanakirja.md %}{% endraw %}
+
+
+
+
+
+
+
