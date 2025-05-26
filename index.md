@@ -48,9 +48,9 @@ Sanakirjat ovat Pythonissa äärimmäisen hyödyllisiä ja monikäyttöisiä my�
 
 ## JavaScript Object Notation (JSON)
 
-[Wikipedia](https://fi.wikipedia.org/wiki/JSON) kertoo että JSON on avoin tiedostomuoto joka on osa JavaScript -standardia. [Englanninkielinen Wikipedia](https://en.wikipedia.org/wiki/JSON) taustoittaa asiaa vielä paremmin.
+[Wikipedia](https://fi.wikipedia.org/wiki/JSON) kertoo että JSON on avoin tiedostomuoto joka on osa JavaScript -standardia. [Englanninkielinen Wikipedia](https://en.wikipedia.org/wiki/JSON) taustoittaa asiaa vielä paremmin. Soveltavampaa tietoa löytyy mm. [RealPythonin](https://realpython.com/python-json/) ja [w3schools](https://www.w3schools.com/python/python_json.asp):in tutoriaaleista.
 
-Meille riittää toistaisekssi tietää että JSON on yleisin internetin tiedosiirtoformaatti, ja että sen hyödyntäminen Pythonissa on melko suoraviivaista.
+Meille riittää toistaiseksi tietää että JSON on internetin yleisin koneluettava tiedosiirtoformaatti, ja että sen hyödyntäminen Pythonissa on melko suoraviivaista.
 
 #### Json-datan lukeminen Pythonissa
 
@@ -67,9 +67,10 @@ Tulostuu: `Nimi: Alice`
 
 #### Json-datan kirjoittaminen Pythonissa
 
-Alla luodaan Python-anakirja, joka muunnetaan JSON-muotoon.
+Alla luodaan Python-sanakirja, joka muunnetaan JSON-muotoon:
 
 ```python
+import json
 ransukoira = {} # luodaan tyhjä sanakirja
 ransukoira["nimi"] = "Ransu"
 ransukoira["ika"] = 5
@@ -92,4 +93,101 @@ Tulostuu:
 }
 ```
 
-**Muista puhua json-importista**
+**Huom!** Ylläolevassa koodissa `import json` tuo json-toiminnallisuuden (kirjaston) koodimme käyttöön. Ilman import-lausetta, koodi ei toimisi. Vaikka json-toiminnallisuus on virallinen osa Pythonia, sitä ei automaattisesti ladata käyttöön. Sama pätee moniin muihinkin kirjastoihin, kuten jatkossa käyttämiimme sys- ja flask-kirjastoihin.  
+
+
+## Tiedostojen käsittely
+
+Tiedostojen käsittelemisestä Pythonissa löytyy kosolti tietoa internetistä. Siitä kerrotaan mm. [Mooc-materiaalin osassa 6](https://ohjelmointi-25.mooc.fi/osa-6). [Mooc:in osio 7.4](https://ohjelmointi-25.mooc.fi/osa-7/4-datan-kasittely) kertoo lyhyesti sekä JSON- ja CSV-tiedostojen käittelystä. Hyvää tietoa aiheesta tarjoilee [DigitalOcean](https://www.digitalocean.com/community/tutorials/python-read-file-open-write-delete-copy), [GeeksForGeeks](https://www.geeksforgeeks.org/file-handling-python/), [W3Schools](https://www.w3schools.com/PYTHON/python_file_handling.asp) sekä Python-projektin oma [tutoriaali](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) ja [manuaali](https://docs.python.org/3/library/filesys.html).
+
+Json-tiedostoja voi käsitellä esimerkiksi näin. Koodi generoi data.json nimisen tiedoston jonka sisältö on sama kuin koodiesimerkin alussa data-nimisen muuttujan sisältö:
+```python
+data = {
+    "name": "John Doe",
+    "age": 30,
+    "city": "New York"
+}
+
+# Kirjoita JSON tiedosto
+with open("data.json", "w") as json_file:
+    json.dump(data, json_file, indent=4)
+
+# Lue JSON tiedosto
+with open("data.json", "r") as json_file:
+    loaded_data = json.load(json_file)
+
+# Tulosta JSON-data
+print(loaded_data)
+```
+
+Tämä on esimerkki ison tiedoston lukemisesta rivi kerrallaan.
+Tällä tavalla vältetään koko tiedoston lataaminen muistiin kerralla,
+mikä on tärkeää, jos tiedosto on erittäin suuri.
+
+```python
+with open('large_example.txt', 'r') as file:  # Avataan tiedosto lukutilassa.
+    for line in file:  # Käydään tiedoston rivit läpi yksi kerrallaan.
+        print(line, end='')  # Tulostetaan rivi ilman ylimääräistä rivinvaihtoa.
+```
+
+### CSV-tiedoston lukeminen
+CSV (Comma-Separated Values) on tiedostomuoto, jossa data tallennetaan tekstimuotoisena riveittäin, ja sarakkeiden arvot erotellaan toisistaan pilkuilla (tai muilla erotinmerkeillä, kuten puolipisteillä). Taulukkolaskentaohjelmat kuten Excel osaavat lukea ja tallentaa CSV-tiedostoja.
+
+Alla olevassa koodiesimerkissä luetaan toiveet.csv-tiedostosta neljän sarakkeen (id,name,description,img-path) tiedot. Voit hyödyntää tätä esimerkkiä kurssin harjoitustyössä:
+
+```python
+import csv
+with open('toiveet.csv', mode='r', encoding='utf-8') as csvfile:
+    csvreader = csv.DictReader(csvfile)
+    for row in csvreader:
+        print(row['id'], row['name'], row['description'], row['img-path'])
+```
+
+## HTML, CSS ja JavaScript
+
+## HTTP ja Rajapinnat (API)
+
+Hyvä suomenkielinen kuvaus HTTP-protokollasta löytyy [Mooc Web-Palvelinohjelmointi -kurssin materiaalin osasta 1.1](https://web-palvelinohjelmointi-21.mooc.fi/osa-1/1-internetin-perusosat) jolla käytetään Java-ohjelmointieltä ja Spring-sovelluskehystä. Se ei sovellu muilta osin kovin hyvin tämän kurssin itseopiskelumateriaaliksi.
+
+HTTP eli Hyper Text Transfer Protocol on yksinkertainen tekstipohjainen protokolla.
+
+Kysely:
+```
+GET /index.html HTTP/1.1
+Host: www.munpalvelin.net
+```
+Vastaus:
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Sep 2014 03:12:45 GMT
+Server: Apache/2.2.14 (Ubuntu)
+Vary: Accept-Encoding
+Content-Length: 973
+Connection: close
+Content-Type: text/html;charset=UTF-8
+
+.. runko joka sisältää HTML-koodin, yms...
+```
+
+### Flask - Pythonin WWW-palvelin
+
+**web-serveri, eli webbiservu, eli HTTP-palvelin** rakkaalla lapsella on monta nimeä.
+
+Alla olevassa esimerkissä on Python-Flask-esimerkki, jossa vastaanotetaan HTTP POST -viestillä kuva, nimi ja kuvaus.
+```python
+@app.route('/wishes', methods=['POST'])
+def add_wish():
+    if 'image' not in request.files:
+        return jsonify({'error': 'No image part'}), 400
+    image = request.files['image']
+    name = request.form.get('name')
+    description = request.form.get('description')
+
+    if not name or not description or image.filename == '':
+        return jsonify({'error': 'Missing data'}), 400
+
+    # Tallenna kuva
+    img_filename = image.filename
+    img_path = os.path.join('static/kuvat', img_filename)
+    image.save(img_path)
+```
