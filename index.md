@@ -1,9 +1,10 @@
 # Generatiivisen tekoälyn ja ohjelmistorobotiikan ohjelmointiteknologioiden perusteet
 
+**!! Tämä osio tarjoaa avaimet kurssin harjoitustyön tekemiseen. Harjoitustyön ohjeen löytyvät [täältä](tehtava.md). Tehtävä palautetaan ohjeiden mukaisesti [Moodleen](https://moodle.seamk.fi/mod/assign/view.php?id=1400266).**
+
 ## Johdanto
 
 Tällä kurssin osalla emme käsittele monimutkaisia tekoälyalgoritmeja, vaan rakennamme ymmärrystä verkkoteknologioista, sekä syvennämme perustason ohjelmointitaitoa aiheilla, jotka on välttämättömiä ohjelmistorobotiikan ja tekoälynpalveluiden ohjelmallisessa hyödyntämisessä.
-
 
 **Python-sanakirjat ja JSON (JavaScript Object Notation):**
 Opitte, miten Python-sanakirjoja käytetään tehokkaasti datan strukturointiin ja miten JSON-muoto mahdollistaa datan vaihdon eri järjestelmien ja sovellusten välillä.
