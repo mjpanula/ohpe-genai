@@ -45,3 +45,51 @@ Sanakirjat ovat Pythonissa äärimmäisen hyödyllisiä ja monikäyttöisiä my�
 4.  **Tuple (monikko)** kuin lista, mutta tehokkaampi tietyissä tilanteissa
     *   **Syntaksi:** Määritellään sulkeilla `()` tai usein jopa ilman niitä, pelkillä pilkuilla erotelluilla arvoilla. Yhden alkion monikko vaatii pilkun peräänsä, esim. `(1,)` tai `1,`.
     *   **Esimerkki:** `koordinaatit = (10, 20)`, `vari_rgb = 255, 128, 0`, `yksi_alkio = ("a",)`
+
+## JavaScript Object Notation (JSON)
+
+[Wikipedia](https://fi.wikipedia.org/wiki/JSON) kertoo että JSON on avoin tiedostomuoto joka on osa JavaScript -standardia. [Englanninkielinen Wikipedia](https://en.wikipedia.org/wiki/JSON) taustoittaa asiaa vielä paremmin.
+
+Meille riittää toistaisekssi tietää että JSON on yleisin internetin tiedosiirtoformaatti, ja että sen hyödyntäminen Pythonissa on melko suoraviivaista.
+
+#### Json-datan lukeminen Pythonissa
+
+Alla oleva koodi konvertoi merkkijonona olevan JSON-datan pythonin sanakirjaksi, ja tulostaa datasta löytyvän nimen.
+
+```python
+import json
+json_string = '{"name": "Alice", "age": 25, "city": "New York"}'
+dictionary = json.loads(json_string)
+print("Nimi:", dictionary["name"])
+```
+
+Tulostuu: `Nimi: Alice`
+
+#### Json-datan kirjoittaminen Pythonissa
+
+Alla luodaan Python-anakirja, joka muunnetaan JSON-muotoon.
+
+```python
+ransukoira = {} # luodaan tyhjä sanakirja
+ransukoira["nimi"] = "Ransu"
+ransukoira["ika"] = 5
+ransukoira["rotu"] = "Karvakuono"
+ransukoira["kaverit"] = ["Eno-Elmeri", "Riku"] # lista
+json_result = json.dumps(ransukoira, indent=4)
+print(json_result)
+```
+
+Tulostuu:
+```json
+{
+    "nimi": "Ransu",
+    "ika": 5,
+    "rotu": "Karvakuono",
+    "kaverit": [
+        "Eno-Elmeri",
+        "Riku"
+    ]
+}
+```
+
+**Muista puhua json-importista**
