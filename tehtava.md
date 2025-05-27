@@ -12,6 +12,8 @@ Vaiheeseen1 löytyy esimerkki [täältä](https://github.com/mjpanula/ohpe-genai
 
 Vaiheeseen 4 löytyy esimerkki [täältä](https://github.com/mjpanula/ohpe-genai/tree/main/harjoitusty%C3%B6/vaihe4). Vaihe 4:n esimerkki ei sinällään toimi, siitä on tarkoituksella poistettu `omat_funktiot.py`-muduuli joka sisältää funktiot `lue_toiveet`, `generoi_toiveet_csv_rivi` ja `ylikirjoita_toiveet_csv`. Mikäli haluat toteuttaa harjoitustyön tämän pohjan avulla, tehtäväksesi jää näiden funktioiden toiminnallisuuden toteuttaminen pohjaan.
 
+**Aikataulu**. Palautetut työt arvioidaan perjantaina 13. kesäkuuta. Mikäli palautettavien töiden (harjoitustyö ja itsearviointi) palautus viivästyy tästä, venyy arviointi Elokuulle.
+
 [Tehtävä palautetaan ZIP-pakattuna moodleen.](https://moodle.seamk.fi/mod/assign/view.php?id=1400266) Jokainen vaihe tulee löytyä omana hakemistonaan. Alla oleva on vain esimerkki. Tärkeintä on palautat kaikki tekemäsi versiot omissa hakemistoissaan itsenäisinä ohjelmina.
 
 ```

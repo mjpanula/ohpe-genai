@@ -2,6 +2,8 @@
 
 **!! Tämä osio tarjoaa avaimet kurssin harjoitustyön tekemiseen. Harjoitustyön ohjeen löytyvät [täältä](tehtava.md). Tehtävä palautetaan ohjeiden mukaisesti [Moodleen](https://moodle.seamk.fi/mod/assign/view.php?id=1400266).**
 
+**Aikataulu**. Palautetut työt arvioidaan perjantaina 13. kesäkuuta. Mikäli palautettavien töiden (harjoitustyö ja itsearviointi) palautus viivästyy tästä, venyy arviointi Elokuulle.
+
 ## Sisällysluettelo
 
 - [Generatiivisen tekoälyn ja ohjelmistorobotiikan ohjelmointiteknologioiden perusteet](#generatiivisen-tekoälyn-ja-ohjelmistorobotiikan-ohjelmointiteknologioiden-perusteet)
