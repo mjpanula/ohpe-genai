@@ -146,6 +146,23 @@ with open('toiveet.csv', mode='r', encoding='utf-8') as csvfile:
 
 ## HTML, CSS ja JavaScript
 
+Nämä kolme teknologiaa muodostavat modernien verkkosivujen ja -sovellusten perustan. Niiden ymmärtäminen on tärkeää, kun työskennellään web-pohjaisten tekoälypalveluiden kanssa tai kun ohjelmistorobotti automatisoi tehtäviä verkkoselaimessa.
+
+**Web-sovelluksen toimintaperiatteista** löytyy hyvä selostus Helsingin yliopiston [Full Stack open -kurssin materiaaleista](https://fullstackopen.com/osa0/web_sovelluksen_toimintaperiaatteita).
+
+*   **HTML (HyperText Markup Language):**
+    HTML on merkkauskieli, jota käytetään verkkosivujen rakenteen ja sisällön määrittelemiseen. HTML-elementit, kuten otsikot (`<h1>`), kappaleet (`<p>`), linkit (`<a>`) ja kuvat (`<img>`), muodostavat sivun perusrakenteen. Ohjelmistorobotiikassa HTML-rakenteen ymmärtäminen on keskeistä, kun botti etsii ja käsittelee tietoa verkkosivuilta (esim. tunnistaa täytettävät kentät tai klikattavat painikkeet).
+    *   Hyvä johdanto HTML:ään löytyy esimerkiksi [W3Schoolsista](https://www.w3schools.com/html/).
+
+*   **CSS (Cascading Style Sheets):**
+    CSS:n avulla määritellään HTML-dokumenttien ulkoasu ja esitystapa. CSS:llä hallitaan esimerkiksi värejä, fontteja, asettelua ja elementtien sijoittelua. Vaikka CSS ei ole suoraan vuorovaikutuksessa datan kanssa kuten HTML tai JavaScript, sen ymmärtäminen auttaa hahmottamaan, miksi verkkosivut näyttävät siltä kuin näyttävät ja miten visuaaliset elementit on järjestetty.
+    *   CSS-perusteisiin voi tutustua [W3Schoolsissa](https://www.w3schools.com/css/).
+
+*   **JavaScript:**
+    JavaScript on ohjelmointikieli, joka tuo verkkosivuille interaktiivisuutta ja dynaamisuutta. Se on kuin talon sähköjärjestelmä ja liikkuvat osat, jotka mahdollistavat toiminnallisuuden. JavaScriptillä voidaan esimerkiksi validoida lomakkeiden syötteitä, luoda animaatioita, muokata sivun sisältöä lennosta ilman sivun uudelleenlatausta (AJAX) ja kommunikoida palvelimien kanssa (esim. API-kutsut). Monet nykyaikaiset verkkosivut ja -sovellukset, mukaan lukien tekoälypalveluiden käyttöliittymät, hyödyntävät JavaScriptiä laajasti. RPA-bottien tulee joskus osata odottaa JavaScriptillä ladattavaa sisältöä tai jopa suorittaa JavaScript-komentoja selaimessa.
+    *   JavaScriptin perusteet löytyvät hyvin selitettynä [W3Schoolsista](https://www.w3schools.com/js/).
+
+
 ## HTTP ja Rajapinnat (API)
 
 Hyvä suomenkielinen kuvaus HTTP-protokollasta löytyy [Mooc Web-Palvelinohjelmointi -kurssin materiaalin osasta 1.1](https://web-palvelinohjelmointi-21.mooc.fi/osa-1/1-internetin-perusosat) jolla käytetään Java-ohjelmointieltä ja Spring-sovelluskehystä. Se ei sovellu muilta osin kovin hyvin tämän kurssin itseopiskelumateriaaliksi.
@@ -173,6 +190,8 @@ Content-Type: text/html;charset=UTF-8
 ### Flask - Pythonin WWW-palvelin
 
 **web-serveri, eli webbiservu, eli HTTP-palvelin** rakkaalla lapsella on monta nimeä.
+
+**!! Huom! Flask ei asennu Pythonin mukana, se pitää asentaa erikseen.** Asennusohjeen löydät [täältä](install-flask.md).
 
 Alla olevassa esimerkissä on Python-Flask-esimerkki, jossa vastaanotetaan HTTP POST -viestillä kuva, nimi ja kuvaus.
 ```python
