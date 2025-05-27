@@ -2,6 +2,8 @@
 
 **Harjoitustyö** on nelivaiheinen. Täydet pisteet saa toteuttamalla kaikki 4 osioita. Tehtävänanto täydentyy esimerkeillä ja täsmennyksillä luentojen yhteydessä.
 
+Alla vaiheiden 1-3 käyttöliittymä (saa tehdä hienommankin)
+![Esimerkki käyttöliittymästä](esmerkkeja/basic_ui.png)
 
 1. Tee Flask-sovellus joka lukee tiedostosta lahjatoiveiden nimet, ja tulostaa ne HTML-taulukossa
    - [Täältä vinkki](https://www.w3schools.com/html/html_tables.asp)
