@@ -189,7 +189,9 @@ Content-Type: text/html;charset=UTF-8
 
 ### Flask - Pythonin WWW-palvelin
 
-**web-serveri, eli webbiservu, eli HTTP-palvelin** rakkaalla lapsella on monta nimeä.
+**Web-serveri, webbiservu, HTTP-palvelin**, rakkaalla lapsella on monta nimeä. Web-palvelin on Internetin kulmakivi. **Webbiservu** on ohjelmisto, joka vastaa verkkosivujen ja web-sovellusten pyynnöistä ja lähettää niihin vastauksia. Se toimii internetin perusrakenteena ja käyttää **HTTP-protokollaa (HyperText Transfer Protocol)** viestintään. Koko **WWW (World Wide Web)** perustuu tähän yksinkertaiseen mutta tehokkaaseen viestintämekanismiin.
+
+Eri teknologioilla ja ohjelmointikielillä toteutettuja web-palvelimia on todella paljon. **Pythonin Flask-webbipalvelin ei ole yleisimpiä web-palvelimia, mutta se mahdollistaa helpon tavan tutustua Web-ohjelmointiin.**
 
 **!! Huom! Flask ei asennu Pythonin mukana, se pitää asentaa erikseen.** Asennusohjeen löydät [täältä](install-flask.md).
 
