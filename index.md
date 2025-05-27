@@ -2,6 +2,22 @@
 
 **!! Tämä osio tarjoaa avaimet kurssin harjoitustyön tekemiseen. Harjoitustyön ohjeen löytyvät [täältä](tehtava.md). Tehtävä palautetaan ohjeiden mukaisesti [Moodleen](https://moodle.seamk.fi/mod/assign/view.php?id=1400266).**
 
+## Sisällysluettelo
+
+- [Generatiivisen tekoälyn ja ohjelmistorobotiikan ohjelmointiteknologioiden perusteet](#generatiivisen-tekoälyn-ja-ohjelmistorobotiikan-ohjelmointiteknologioiden-perusteet)
+  - [Sisällysluettelo](#sisällysluettelo)
+  - [Johdanto](#johdanto)
+  - [Sanakirja](#sanakirja)
+    - [Lyhyesti Pythonin muista kokoelmatyypeistä](#lyhyesti-pythonin-muista-kokoelmatyypeistä)
+  - [JavaScript Object Notation (JSON)](#javascript-object-notation-json)
+      - [Json-datan lukeminen Pythonissa](#json-datan-lukeminen-pythonissa)
+      - [Json-datan kirjoittaminen Pythonissa](#json-datan-kirjoittaminen-pythonissa)
+  - [Tiedostojen käsittely](#tiedostojen-käsittely)
+    - [CSV-tiedoston lukeminen](#csv-tiedoston-lukeminen)
+  - [HTML, CSS ja JavaScript](#html-css-ja-javascript)
+  - [HTTP ja Rajapinnat (API)](#http-ja-rajapinnat-api)
+    - [Flask - Pythonin WWW-palvelin](#flask---pythonin-www-palvelin)
+
 ## Johdanto
 
 Tällä kurssin osalla emme käsittele monimutkaisia tekoälyalgoritmeja, vaan rakennamme ymmärrystä verkkoteknologioista, sekä syvennämme perustason ohjelmointitaitoa aiheilla, jotka on välttämättömiä ohjelmistorobotiikan ja tekoälynpalveluiden ohjelmallisessa hyödyntämisessä.
