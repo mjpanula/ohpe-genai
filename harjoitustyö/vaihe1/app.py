@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/') # tämä jää odottamaan tuleeko juureen HTTP-viesti
 def index():
 
     # alla oleva rivi vaihtaa työhakemistoksi tämän koodin hakemiston
