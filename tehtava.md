@@ -9,7 +9,7 @@ Alla vaiheiden 1-3 käyttöliittymä (saa tehdä hienommankin)
    - [Täältä vinkki](https://www.w3schools.com/html/html_tables.asp)
 2. Flask sovellus lukee CSV-tiedostosta lahjatoiveiden nimen, kuvauksen sekä kuvapolun ja tulostaa ne HTML-taulukossa
    - Tässä voi käyttää vaihe 4:n tehtäväpohjan CSV-tiedostoa mallina
-3. Flask sovellus lukee CSV-tiedostosta edelliset, muuntaa lahjatoivetiedot JSON-muotoon ja tarjoilee niitä niitä JSON-formaatissa HTTP-rajapinnan yli
+3. Flask sovellus lukee CSV-tiedostosta edelliset, muuntaa lahjatoivetiedot JSON-muotoon ja tarjoilee niitä niitä JSON-formaatissa HTTP-rajapinnan yli. Tässä pitää perehtyä hieman JavaScript-selainohjelmointiin. Vaiheen 4 index.html-koodista voi ottaa mallia.
 4. Edellisen lisäksi, uusia lahjatoiveita pystyy tallentamaan tiedostoon. Myös kuvan lataaminen ja toiveen poistaminen pitää olla mahdollista.
 
 Vaiheeseen1 löytyy esimerkki [täältä](https://github.com/mjpanula/ohpe-genai/tree/main/harjoitusty%C3%B6/vaihe1). [zip-paketti](https://github.com/mjpanula/ohpe-genai/raw/refs/heads/main/harjoitusty%C3%B6/vaihe1.zip).
