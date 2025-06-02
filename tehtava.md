@@ -16,7 +16,7 @@ Alla vaiheiden 1-3 käyttöliittymä (saa tehdä hienommankin)
 
 Vaiheeseen1 löytyy esimerkki [täältä](https://github.com/mjpanula/ohpe-genai/tree/main/harjoitusty%C3%B6/vaihe1). [zip-paketti](https://github.com/mjpanula/ohpe-genai/raw/refs/heads/main/harjoitusty%C3%B6/vaihe1.zip).
 
-Vaiheeseen 4 löytyy esimerkki [täältä](https://github.com/mjpanula/ohpe-genai/tree/main/harjoitusty%C3%B6/vaihe4). [zip-paketti](https://github.com/mjpanula/ohpe-genai/raw/refs/heads/main/harjoitusty%C3%B6/vaihe4.zip). Vaihe 4:n esimerkki ei sinällään toimi, siitä on tarkoituksella poistettu `omat_funktiot.py`-muduuli joka sisältää funktiot `lue_toiveet`, `generoi_toiveet_csv_rivi` ja `ylikirjoita_toiveet_csv`. Mikäli haluat toteuttaa harjoitustyön tämän pohjan avulla, tehtäväksesi jää näiden funktioiden toiminnallisuuden toteuttaminen pohjaan.
+Vaiheeseen 4 löytyy esimerkki [täältä](https://github.com/mjpanula/ohpe-genai/tree/main/harjoitusty%C3%B6/vaihe4). [zip-paketti](https://github.com/mjpanula/ohpe-genai/raw/refs/heads/main/harjoitusty%C3%B6/vaihe4.zip). Vaihe 4:n esimerkki ei sinällään toimi, siitä on tarkoituksella poistettu `omat_funktiot.py`-moduuli joka sisältää funktiot `lue_toiveet`, `generoi_toiveet_csv_rivi` ja `ylikirjoita_toiveet_csv`. Mikäli haluat toteuttaa harjoitustyön tämän pohjan avulla, tehtäväksesi jää näiden funktioiden toiminnallisuuden toteuttaminen pohjaan.
 
 **Aikataulu**. Palautetut työt arvioidaan perjantaina 13. kesäkuuta. Mikäli palautettavien töiden (harjoitustyö ja itsearviointi) palautus viivästyy tästä, venyy arviointi Elokuulle.
 
