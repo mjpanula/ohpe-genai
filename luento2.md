@@ -4,7 +4,7 @@ Kerrataan aiemman luennon aihepiirejä, mutta tutustutaan web-koodaukseen ja pyt
 
 **Aiheet 5.6.2025**
 
-- Tiedostojen ja erityisesti CVS-tiedostojen käsittelystä muutama sana
+- Tiedostojen ja erityisesti CSV-tiedostojen käsittelystä muutama sana
   - Hakemistojen ja tiedostojen luominen ohjelmallisesti
     - [Esimerkki tiedostojen ja hakemistojen käsittelystä Pythonissa](tiedostoista.md)
     - [Windowsin käyttö komentokielellä - Jyväskyulän Yliopisto](https://appro.mit.jyu.fi/doc/tyovaline/dos/index4.html)
