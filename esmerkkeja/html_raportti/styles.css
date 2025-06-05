@@ -1,0 +1,72 @@
+/* Basic Reset & Body Styling */
+body {
+    font-family: Arial, sans-serif; /* A common, readable font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark grey text color */
+}
+
+header {
+    background-color: #357ab7; /* A nice blue */
+    color: #ffffff; /* White text */
+    padding: 1rem 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Container for sections */
+section {
+    padding: 20px;
+    margin: 20px auto; /* Center sections with auto margins */
+    background-color: #ffffff; /* White background for content sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    max-width: 900px; /* Limit width for better readability */
+}
+
+h2 {
+    color: #357ab7; /* Same blue as header for consistency */
+    border-bottom: 2px solid #eeeeee; /* Light underline for headings */
+    padding-bottom: 10px;
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Make table take full width of its container */
+    border-collapse: collapse; /* Remove gaps between cells */
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd; /* Light grey border for cells */
+    text-align: left;
+    padding: 12px; /* More padding for readability */
+}
+
+th {
+    background-color: #e9eff4; /* Very light blue for header cells */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Zebra striping for table rows */
+}
+
+/* Plot Section Specifics */
+#plot .plotly-graph-div { /* Target the div Plotly creates */
+    margin: auto; /* Center the plot if it's not full width */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #777;
+}

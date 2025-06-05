@@ -176,7 +176,7 @@ Nämä kolme teknologiaa muodostavat modernien verkkosivujen ja -sovellusten per
 
 *   **CSS (Cascading Style Sheets):**
     CSS:n avulla määritellään HTML-dokumenttien ulkoasu ja esitystapa. CSS:llä hallitaan esimerkiksi värejä, fontteja, asettelua ja elementtien sijoittelua. Vaikka CSS ei ole suoraan vuorovaikutuksessa datan kanssa kuten HTML tai JavaScript, sen ymmärtäminen auttaa hahmottamaan, miksi verkkosivut näyttävät siltä kuin näyttävät ja miten visuaaliset elementit on järjestetty.
-    *   CSS-perusteisiin voi tutustua [W3Schoolsissa](https://www.w3schools.com/css/).
+    *   [Johdanto CSS:n](css.md)
 
 *   **JavaScript:**
     JavaScript on ohjelmointikieli, joka tuo verkkosivuille interaktiivisuutta ja dynaamisuutta. Se on kuin talon sähköjärjestelmä ja liikkuvat osat, jotka mahdollistavat toiminnallisuuden. JavaScriptillä voidaan esimerkiksi validoida lomakkeiden syötteitä, luoda animaatioita, muokata sivun sisältöä lennosta ilman sivun uudelleenlatausta (AJAX) ja kommunikoida palvelimien kanssa (esim. API-kutsut). Monet nykyaikaiset verkkosivut ja -sovellukset, mukaan lukien tekoälypalveluiden käyttöliittymät, hyödyntävät JavaScriptiä laajasti. RPA-bottien tulee joskus osata odottaa JavaScriptillä ladattavaa sisältöä tai jopa suorittaa JavaScript-komentoja selaimessa.
