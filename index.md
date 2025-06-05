@@ -117,7 +117,7 @@ Tulostuu:
 
 ## Tiedostojen käsittely
 
-Tiedostojen käsittelemisestä Pythonissa löytyy kosolti tietoa internetistä. Siitä kerrotaan mm. [Mooc-materiaalin osassa 6](https://ohjelmointi-25.mooc.fi/osa-6). [Mooc:in osio 7.4](https://ohjelmointi-25.mooc.fi/osa-7/4-datan-kasittely) kertoo lyhyesti sekä JSON- ja CSV-tiedostojen käittelystä. Hyvää tietoa aiheesta tarjoilee [DigitalOcean](https://www.digitalocean.com/community/tutorials/python-read-file-open-write-delete-copy), [GeeksForGeeks](https://www.geeksforgeeks.org/file-handling-python/), [W3Schools](https://www.w3schools.com/PYTHON/python_file_handling.asp) sekä Python-projektin oma [tutoriaali](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) ja [manuaali](https://docs.python.org/3/library/filesys.html).
+Tiedostojen käsittelemisestä Pythonissa löytyy kosolti tietoa internetistä. Siitä kerrotaan mm. [Mooc-materiaalin osassa 6](https://ohjelmointi-25.mooc.fi/osa-6). [Mooc:in osio 7.4](https://ohjelmointi-25.mooc.fi/osa-7/4-datan-kasittely) kertoo lyhyesti sekä JSON- ja CSV-tiedostojen käsittelystä. Hyvää tietoa aiheesta tarjoilee [DigitalOcean](https://www.digitalocean.com/community/tutorials/python-read-file-open-write-delete-copy), [GeeksForGeeks](https://www.geeksforgeeks.org/file-handling-python/), [W3Schools](https://www.w3schools.com/PYTHON/python_file_handling.asp) sekä Python-projektin oma [tutoriaali](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) ja [manuaali](https://docs.python.org/3/library/filesys.html).
 
 Json-tiedostoja voi käsitellä esimerkiksi näin. Koodi generoi data.json nimisen tiedoston jonka sisältö on sama kuin koodiesimerkin alussa data-nimisen muuttujan sisältö:
 ```python
@@ -148,6 +148,8 @@ with open('large_example.txt', 'r') as file:  # Avataan tiedosto lukutilassa.
     for line in file:  # Käydään tiedoston rivit läpi yksi kerrallaan.
         print(line, end='')  # Tulostetaan rivi ilman ylimääräistä rivinvaihtoa.
 ```
+Vaikka Pythonin syntaksi ylläolevassa esimerkissä `for line in file:` on hyvin ytimekäs ja saattaa antaa vaikutelman, että koko tiedosto olisi jotenkin jo valmiiksi käsittelyssä, se on itse asiassa erittäin optimoitu ja muistiystävällinen tapa käsitellä tiedostoja. Pythonin tiedosto-objekti toimii tässä yhteydessä **iteraattorina**, joka tuottaa yhden rivin kerrallaan pyydettäessä. 
+
 
 ### CSV-tiedoston lukeminen
 CSV (Comma-Separated Values) on tiedostomuoto, jossa data tallennetaan tekstimuotoisena riveittäin, ja sarakkeiden arvot erotellaan toisistaan pilkuilla (tai muilla erotinmerkeillä, kuten puolipisteillä). Taulukkolaskentaohjelmat kuten Excel osaavat lukea ja tallentaa CSV-tiedostoja.
